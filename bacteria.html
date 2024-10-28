@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antibiotic Choices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Antibiotic Choices for <span id="bacteria-name">[Bacteria]</span></h1>
+        </div>
+    </header>
+
+    <section id="antibiotic-tabs">
+        <div class="container">
+            <div class="tabs">
+                <button id="preferredTab" class="tab active" onclick="showPreferredAntibiotics()">Preferred Antibiotics</button>
+                <button id="allTab" class="tab" onclick="showAllAntibiotics()">All Antibiotics</button>
+            </div>
+
+            <!-- Preferred Antibiotics by Class -->
+            <div id="preferred-antibiotics" class="antibiotic-list active">
+                <div id="preferred-antibiotic-list"></div> <!-- Preferred antibiotics categorized by class will be inserted here -->
+            </div>
+
+            <!-- All Antibiotics by Class -->
+            <div id="all-antibiotics" class="antibiotic-list">
+                <div id="all-antibiotic-list"></div> <!-- All antibiotics categorized by class will be inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!--<footer>
+        <div class="container">
+            <p>&copy; 2024 Your App Name. All rights reserved.</p>
+        </div>
+    </footer>
+-->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
