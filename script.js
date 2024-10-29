@@ -2969,35 +2969,218 @@ const bacteriaData = [
             { name: "Amoxicillin-Clavulanate", class: "Penicillins",detailsPage: "antibiotic.html?name=Amoxicillin-Clavulanate" },
         ]
     },
-
-
-
-
-
-
 ];
 
-// Dosing information for antibiotics
+
+
+
+
+
+
+
+
+
+
+
+
+
+//abx dosing
 const antibioticDosingData = {
-    Imipenem: [
-        { indication: "Pneumonia", standardDose: "500 mg Q6H", renalAdjustment: "CrCl < 30: 250 mg Q6H" },
-        { indication: "Sepsis", standardDose: "1 g Q8H", renalAdjustment: "CrCl < 30: 500 mg Q8H" }
-    ],
-    Meropenem: [
-        { indication: "Intra-abdominal infections", standardDose: "1 g Q8H", renalAdjustment: "CrCl < 30: 500 mg Q12H" },
-        { indication: "Meningitis", standardDose: "2 g Q8H", renalAdjustment: "CrCl < 30: 1 g Q12H" }
-    ],
-    // Add more antibiotics here...
+    "Meropenem": {
+        indications: [
+            {
+                name:"Anthrax",
+                dose: "2g IV every 8 hours", 
+                description: "Should be dosed as part of an appropriate combination regimen"
+            },
+
+            {
+                name: "Bloodstream Infection",
+                dose: "1g IV every 8 hours",
+                description: "Usual duration is 7-14 days depending on source, pathogen, and clinical response"
+            },
+            {
+                name: "Cystic Fibrosis",
+                dose: "2g IV every 8 hours",
+                description:""
+            }, 
+
+            {
+                name: "Diabetic Foot Infection (moderate to severe)", 
+                dose: "1g IV every 8 hours",
+                description:""
+
+            }, 
+
+            {
+                name: "Intra-abdominal infections", 
+                dose: "1g IV every 8 hours", 
+                description:""
+
+            }, 
+ 
+
+            {
+                name: "Melioidosis or glanders", 
+                dose: "1g IV every 8 hours", 
+                description:""
+
+            }, 
+
+            {
+                name: "Meningitis (bacterial)", 
+                dose: "2g IV every 8 hours", 
+                description:""
+
+            }, 
+
+
+            {
+                name: "Osteomyelitis and/ or discitis", 
+                dose: "1g IV every 8 hours",
+                description: "Duration should be > 6 weeks"
+            }, 
+
+            {
+                name: "Pneumonia (CAP/HAP/VAP)", 
+                dose: "1g IV every 8 hours", 
+                description:""
+
+            }, 
+
+            {
+                name: "Prosthetic Joint Infection", 
+                dose: "1g IV every 8 hours", 
+                description:"", 
+                description:""
+
+
+            }, 
+
+            {
+                name: "Sepsis and Septic shock", 
+                dose: "1-2g IV every 8 hours", 
+                description:""
+
+            }, 
+
+            {
+                name: "SSTI Infection", 
+                dose: "1g IV every 8 hours", 
+                description:""
+
+            }, 
+
+            {
+                name: "UTI (complicated)", 
+                dose: "1g IV every 8 hours", 
+                description:""
+
+            }
+        ],
+        renalAdjustments: {
+            "≥ 50": "No adjustment needed",
+            "> 25-49": "1g IV every 12 hours",
+            "10-24": "500 mg IV every 12 hours",
+            "< 10":" 500 mg IV every 24 hours",
+            "HD": "500 mg every 24 hours", 
+            "Peritoneal dialysis": "500 mg every 24 hours",
+            "CRRT": "Clearance dependent on effluent flow rate"
+        }
+    },
+    // Add other antibiotics with detailed data here...
+};
+
+function loadAntibioticData() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const antibioticName = urlParams.get('name');
+
+    if (antibioticName) {
+        document.getElementById('antibiotic-name').textContent = antibioticName;
+
+        const antibioticData = antibioticDosingData[antibioticName];
+        if (antibioticData) {
+            const indicationsTabs = document.getElementById('indications-tabs');
+            indicationsTabs.innerHTML = ''; // Clear previous tabs
+
+            antibioticData.indications.forEach((indication, index) => {
+                // Create tab button with toggle functionality
+                const tab = document.createElement('button');
+                tab.textContent = indication.name;
+                tab.classList.add('tab');
+                tab.onclick = () => toggleIndication(indication, tab);
+
+                indicationsTabs.appendChild(tab);
+
+                // Create initial content, hidden by default
+                const indicationContent = document.createElement('div');
+                indicationContent.classList.add('indication-content');
+                indicationContent.style.display = 'none'; // Start hidden
+
+                indicationContent.innerHTML = `
+                    <p><strong>Dose:</strong> ${indication.dose}</p>
+                    <p>${indication.description}</p>
+                `;
+
+                indicationsTabs.appendChild(indicationContent);
+            });
+
+            // Populate the single renal adjustment table at the bottom
+            const renalTableBody = document.getElementById('renal-adjustment-body');
+            renalTableBody.innerHTML = ''; // Clear previous data
+
+            Object.keys(antibioticData.renalAdjustments).forEach(range => {
+                const row = document.createElement('tr');
+                const rangeCell = document.createElement('td');
+                const adjustmentCell = document.createElement('td');
+
+                rangeCell.textContent = range;
+                adjustmentCell.textContent = antibioticData.renalAdjustments[range];
+
+                row.appendChild(rangeCell);
+                row.appendChild(adjustmentCell);
+                renalTableBody.appendChild(row);
+            });
+        }
+    }
+}
+
+function toggleIndication(indication, tab) {
+    const contentDiv = tab.nextElementSibling;
+
+    if (contentDiv.style.display === 'none') {
+        contentDiv.style.display = 'block';
+        tab.classList.add('active');
+    } else {
+        contentDiv.style.display = 'none';
+        tab.classList.remove('active');
+    }
+}
+
+// Initialize the page
+if (window.location.pathname.includes('antibiotic.html')) {
+    window.onload = loadAntibioticData;
 }
 
 
 
 
 
-// Sample classification data for organizing antibiotics by class
+
+
+
+
+
+
+
+
+
+
+
+// All antibioitcs listed by class 
 const antibioticsByClass = [
-    { name: "Penicllin G", class: "Penicillins"},
-    { name: "Penicllin VK", class: "Penicillins"},
+    { name: "Penicillin G", class: "Penicillins"},
+    { name: "Penicillin VK", class: "Penicillins"},
     { name: "Nafcillin", class: "Penicillins"},
     { name: "Oxacillin", class: "Penicillins"},
     { name: "Cloxacillin", class: "Penicillins"},
