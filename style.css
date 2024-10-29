@@ -147,3 +147,157 @@ footer {
 
 
 
+.dosing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.dosing-table th, .dosing-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.dosing-table th {
+    background-color: #55739b;
+    color: white;
+    font-weight: bold;
+}
+
+.dosing-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.indication-cell {
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background-color: #55739b;
+    color: white;
+}
+
+#indication-content {
+    margin-bottom: 20px;
+}
+
+.renal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.renal-table th, .renal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.renal-table th {
+    background-color: #55739b;
+    color: white;
+}
+
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tab.active {
+    background-color: #55739b;
+    color: white;
+}
+
+.indication-content {
+    display: none; /* Initially hidden */
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    border-radius: 0 0 5px 5px;
+}
+
+.renal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.renal-table th, .renal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.renal-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Adjust tabs to be side-by-side and smaller */
+.tabs-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #55739b;
+    color: white;
+    border-radius: 5px 5px 0 0;
+}
+
+.tab.active {
+    background-color: #55739b; /* Slightly darker shade for active tab */
+}
+
+#preferredTab {
+    background-color: #4B8EBA;
+}
+
+#allTab {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+
