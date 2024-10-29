@@ -56,26 +56,28 @@
         </div>
     </header>
 
-    <!-- Section for displaying antibiotics by class -->
-    <section id="antibiotics-container" class="container">
-        <!-- Antibiotics organized by class will be dynamically inserted here by script.js -->
-    </section>
-
-    <!-- Section for dosing information -->
     <section id="dosing-info">
         <div class="container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Indication</th>
-                        <th>Standard Dose</th>
-                        <th>Renal Dose Adjustment</th>
-                    </tr>
-                </thead>
-                <tbody id="dosing-table">
-                    <!-- Dosing information will be dynamically inserted here -->
-                </tbody>
-            </table>
+            <!-- Indications Tabs -->
+            <div id="indications-tabs" class="tabs">
+                <!-- Tabs for each indication will be dynamically generated here -->
+            </div>
+
+            <!-- Renal Adjustment Section (Single Table at Bottom) -->
+            <div id="renal-adjustments">
+                <h2>Renal Adjustments</h2>
+                <table class="renal-table">
+                    <thead>
+                        <tr>
+                            <th>CrCl Range</th>
+                            <th>Dose Adjustment</th>
+                        </tr>
+                    </thead>
+                    <tbody id="renal-adjustment-body">
+                        <!-- Renal adjustment data will be dynamically inserted here -->
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -88,3 +90,9 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
