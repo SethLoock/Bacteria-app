@@ -3050,37 +3050,37 @@ const antibioticDosingData = {
             {
                 name: "Actinomycosis", 
                 dose: "Oral: 500 - 1000 mg every 6 hours",
-                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection"
+                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection",
             },
             {
                 name: "Anthrax", 
                 dose: "Oral: 500 mg every 6 hours",
-                description: ""
+                description: "",
             },
             {
                 name: "Meningococcal prophylaxis in patients with complement deficiency", 
                 dose: "Oral: 500 mg twice daily in addition to meningococcal vaccination",
-                description: ""
+                description: "",
             },
             {
                 name: "Pneumococcal prophylaxis in patients at high risk ", 
                 dose: "Oral: 250 - 500 mg twice daily",
-                description: ""
+                description: "",
             },
             {
                 name: "Prosthetic Joint Infection", 
                 dose: "Oral: 500 mg 2-4 times daily",
-                description: ""
+                description: "",
             },
             {
                 name: "Skin and soft tissue infection", 
                 dose: "Cellulitis: 250 - 500 mg twice daily ---- Erysipelas: 500 mg every 6 hours ---- Erysipeloid: 500 mg every 6 hours " ,
-                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection"
+                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection",
             },
             {
                 name: "Streptococcus, Group A", 
                 dose: "Pharyngitis: 500 mg orally 2-3 times daily  ---- Secondary prophylaxis: 250 mg orally twice daily ---- Chronic carriage: 500 mg orally 4 times daily " ,
-                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection"
+                description: "Duartion is uncertain: experts suggest 2-6 months for mild infection and 6-12 months for severe extensive infection",
             },
         ],
         renalAdjustments: {
@@ -3099,23 +3099,23 @@ const antibioticDosingData = {
             {
                 name: "Bloodstream Infection", 
                 dose: "IV: 2 grams every 4 hours",
-                description: "Treat uncomplicated bacteremia for ≥ 14 days starting from day of first negative blood culture"
+                description: "Treat uncomplicated bacteremia for ≥ 14 days starting from day of first negative blood culture",
             },
             {
                 name: "Endocarditis",
                 dose: "12 grams/day in 4-6 divided doses for 6 weeks",
-                description: ""
+                description: "",
             },
             {
                 name: "Meningitis", 
                 dose: "IV 2 grams every 4 hours", 
-                description: "Duration is 10-14 days, depending on causative pathogens and clinical response"
+                description: "Duration is 10-14 days, depending on causative pathogens and clinical response",
             },
 
             {
                 name: "Osteomyelitis", 
                 dose: "IV: 1.5 - 2 grams every 4-6 hours or via continuous infusion ≥ 6 weeks depending on extent of infection, debridemnet, and clinical response", 
-                description: ""
+                description: "",
             },
 
             {
@@ -3132,7 +3132,7 @@ const antibioticDosingData = {
             {
                 name: "Skin and Soft Tissue Infection", 
                 description: "1-2 grams every 4-6 hours depending on type of infection (Cellulitis, Necrotizing infection, Surgical site infection)", 
-                description: ""
+                description: "",
             },
         ],
         renalAdjustments: {
