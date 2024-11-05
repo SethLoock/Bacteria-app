@@ -3135,6 +3135,15 @@ const antibioticDosingData = {
                 description: ""
             },
         ],
+        renalAdjustments: {
+            "≥ 50": "No dosage adjustment necessary",
+            "> 30-49": "No dosage adjustment necessary",
+            "10-29": "No dosage adjustment necessary",
+            "< 10":"No dosage adjustment necessary",
+            "HD": "No dosage adjustment necessary", 
+            "Peritoneal dialysis": "No dosage adjustment necessary",
+            "CRRT": "No dosage adjustment necessary",
+        }
     },
 
 
