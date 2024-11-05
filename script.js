@@ -3131,7 +3131,7 @@ const antibioticDosingData = {
             },
             {
                 name: "Skin and Soft Tissue Infection", 
-                description: "1-2 grams every 4-6 hours depending on type of infection (Cellulitis, Necrotizing infection, Surgical site infection)", 
+                dose: "1-2 grams every 4-6 hours depending on type of infection (Cellulitis, Necrotizing infection, Surgical site infection)", 
                 description: "",
             },
         ],
