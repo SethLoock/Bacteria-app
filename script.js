@@ -2786,7 +2786,7 @@ const bacteriaData = [
         ],
         allAntibiotics:[
             { name: "Chloramphenicol", class: "Other", detailsPage: "antibiotic.html?name=Chloramphenicol"},
-           { name: "Linezolid", class: "Oxazolids", detailsPage: "antibiotic.html?name=Linezolid"}, 
+            { name: "Linezolid", class: "Oxazolids", detailsPage: "antibiotic.html?name=Linezolid"}, 
             { name: "Tetracycline", class: "Tetracyclines", detailsPage: "antibiotic.html?name=Tetracycline"},  
             { name: "Minocycline", class: "Tetracyclines", detailsPage: "antibiotic.html?name=Minocycline"},  
             { name: "Doxycycline", class: "Tetracyclines", detailsPage: "antibiotic.html?name=Doxycycline"},  
@@ -2818,10 +2818,10 @@ const bacteriaData = [
         allAntibiotics:[
             { name: "Metronidazole", class: "Other", detailsPage: "antibiotic.html?name=Metronidazole"}, 
             { name: "Chloramphenicol", class: "Other", detailsPage: "antibiotic.html?name=Chloramphenicol"},
-           { name: "Linezolid", class: "Oxazolids", detailsPage: "antibiotic.html?name=Linezolid"}, 
-           { name: "Dalbavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Dalbavancin"},  
-           { name: "Oritavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Oritavancin"},  
-           { name: "Telavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Telavancin"},  
+            { name: "Linezolid", class: "Oxazolids", detailsPage: "antibiotic.html?name=Linezolid"}, 
+            { name: "Dalbavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Dalbavancin"},  
+            { name: "Oritavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Oritavancin"},  
+            { name: "Telavancin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Telavancin"},  
             { name: "Teicoplanin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Teicoplanin"},
             { name: "Vancomycin", class: "Glyc/Lipo", detailsPage: "antibiotic.html?name=Vancomycin"},
             { name: "Tigecycline", class: "Tetracyclines", detailsPage: "antibiotic.html?name=Tigecycline"},  
@@ -3145,6 +3145,281 @@ const antibioticDosingData = {
             "CRRT": "No dosage adjustment necessary",
         }
     },
+    "Oxacillin": {
+        indications: [
+            {
+                name: "Bloodstream Infection", 
+                dose: "IV: 2 grams every 4 hours",
+                description: "Treat uncomplicated bacteremia for ≥ 14 days starting from day of first negative blood culture",
+            },
+            {
+                name: "Endocarditis, treatment (Native Valve)",
+                dose: "12 grams/day in 4-6 divided doses for 6 weeks",
+                description: "",
+            },
+            {
+                name: "Endocarditis, treatment (Prosthetic Valve)",
+                dose: "12 grams/day in 6 divided doses for ≥ 6 weeks",
+                description: "Use with rifampin for duration of therapy and gentamicin for first 2 weeks",
+            },
+            {
+                name: "Meningitis, bacterial", 
+                dose: "IV 2 grams every 4 hours", 
+                description: "Duration is 10-14 days, depending on causative pathogens and clinical response",
+            },
+
+            {
+                name: "Osteomyelitis or discitis", 
+                dose: "IV: 1.5 - 2 grams every 4-6 hours or via continuous infusion ≥ 6 weeks depending on extent of infection, debridemnet, and clinical response", 
+                description: "",
+            },
+
+            {
+                name: "Pneumonia", 
+                dose: "IV: 2 grams every 4 hours", 
+                description: "",
+            },
+
+            {
+                name: "Prosthetic Joint Infection", 
+                dose: "IV: 1.5 - 2 grams every 4-6 hours", 
+                description: "Duration ranges from 2 - 6 weeks depending on prosthesis management, use of rifampin, and other patient specific factors",
+            },
+            {
+                name: "Skin and Soft Tissue Infection", 
+                dose: "1-2 grams every 4-6 hours depending on type of infection (Cellulitis, Necrotizing infection, Surgical site infection)", 
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "≥ 10": "No dosage adjustment necessary",
+            "< 10":"No dosage adjustment necessary, but max dose of 8 grams per day may be considered",
+            "HD": "No dosage adjustment necessary, but max dose of 8 grams per day may be considered", 
+            "Peritoneal dialysis": "5% dialyzed. No dosage adjustment necessary, but max dose of 8 grams per day may be considered",
+            "CRRT": "No dosage adjustment necessary",
+            "PIRRT": "No dosage adjustment necessary",
+        }
+    },
+
+    "Cloxacillin": {
+        indications: [
+            {
+                name: "Bloodstream Infection: MSSA", 
+                dose: "IV: 2 grams every 4-6 hours",
+                description: "Treat uncomplicated bacteremia for ≥ 14 days starting from day of first negative blood culture",
+            },
+            {
+                name: "Endocarditis, treatment (Native Valve)",
+                dose: "12 grams/day in 4-6 divided doses for 6 weeks",
+                description: "",
+            },
+            {
+                name: "Endocarditis, treatment (Prosthetic Valve)",
+                dose: "12 grams/day in 6 divided doses for ≥ 6 weeks",
+                description: "Use with rifampin for duration of therapy and gentamicin for first 2 weeks",
+            },
+            {
+                name: "Osteomyelitis: MSSA", 
+                dose: "IV: 2 grams every 4 hours for ≥ 6 weeks", 
+                description: "",
+            },
+            {
+                name: "Skin and Soft Tissue Infection, Impetigo", 
+                dose: "Oral: 250-500 mg every 6 hours for 5-7 days", 
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "≥ 10": "No dosage adjustment necessary",
+            "< 10":"No dosage adjustment necessary, but monitoring recommended",
+            "HD": "Not significantly dialyzed, dose as CrCl < 10 mL/min. ", 
+            "Peritoneal dialysis": "Not significantly dialyzed, dose as CrCl < 10 mL/min." ,
+            "CRRT": "No dosage adjustment necessary",
+            "PIRRT": "No dosage adjustment necessary",
+        }
+    },
+
+    "Flucloxacillin": {
+        indications: [
+            {
+                name: "Limited Data", 
+                dose: "",
+                description: "",
+            },
+            
+        ],
+        renalAdjustments: {
+            "≥ 10": "",
+            "< 10":"",
+            "HD": "", 
+            "Peritoneal dialysis": "",
+            "CRRT": "",
+            "PIRRT": "",
+        }
+    },
+
+    "Dicloxacillin": {
+        indications: [
+            {
+                name: "Endocarditis, treatment: Oral step-down therapy",
+                dose: "Oral: 1 gram in 4 times daily divided doses for 6 weeks",
+                description: "Total duration should include initial IV therapy and should be in combination with rifampin",
+            },
+            {
+                name: "Mastitis, lactational",
+                dose: "Oral: 500 mg 4 times daily for 10-14 days",
+                description: "",
+            },
+            {
+                name: "Prosthetic Joint Infection", 
+                dose: "Oral: 500 mg 3-4 times daily", 
+                description: "Duration ranges from minimum of 3 months to indefinitely. First 3-6 months should be in combination with rifampin.",
+            },
+            {
+                name: "Skin and Soft Tissue Infection (Cellulitis - non-purulent/erysipelas)", 
+                dose: "Oral: 250 to 500 mg 4 times daily for 5 days", 
+                description: "",
+            },
+            {
+                name: "Skin and Soft Tissue Infection (Impetigo or Ecthyma)", 
+                dose: "Oral: 250 to 500 mg 4 times daily for 7 days", 
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "≥ 10": "No dosage adjustment necessary",
+            "< 10":"No dosage adjustment necessary",
+            "HD": "No dosage adjustment necessary", 
+            "Peritoneal dialysis": "No dosage adjustment necessary",
+            "CRRT": "No dosage adjustment necessary",
+            "PIRRT": "No dosage adjustment necessary",
+        }
+    },
+
+    "Ampicillin": {
+        indications: [
+            {
+                name: "Acinomycosis, severe or extensive",
+                dose: "IV: 2 grams every 4-6 hours.",
+                description: "Duration of 2-6 weeks followed by long term oral therapy",
+            },
+            {
+                name: "Anthrax (inhalational - post exposure prophylaxis)",
+                dose: "Oral: 500 mg every 6 hours. ",
+                description: "Duration depends on vaccine status and may be up to 3-4 months for immunocompromised or unvaccinated patients ",
+            },
+            {
+                name: "Anthrax (Cutaneous, without meningitis)",
+                dose: "Oral: 500 mg every 6 hours. ",
+                description: "Duration is 7-10 days after infection.",
+            },
+            {
+                name: "Anthrax (Systemic, including meningitis)",
+                dose: "IV: 2 grams every 4 hours.",
+                description: "Use in combination with other appropriate agents for > 2 weeks",
+            },
+            {
+                name: "Bloodstream infection (Enterococcus)",
+                dose: "IV: 2 grams every 4 hours.",
+                description: "Use in combination with other appropriate agents for 7-14 days",
+            },
+            {
+                name: "Bloodstream infection (Listeria monocytogenes)",
+                dose: "IV: 2 grams every 4 hours.",
+                description: "Use in combination with gentamicin for nonpregnant patients. Usual duration is 14-21 days",
+            },
+            {
+                name: "Endocarditis, Prophylaxis - dental or invasive respiratory tract procedure",
+                dose: "IV/IM: 2 grams as a single dose 30-60 minutes before procedure.",
+                description: "",
+            },
+            {
+                name: "Endocarditis, Treatment (Enterococcus faecalis, native or prosthetic valve)",
+                dose: "IV: 2 grams every 4 hours as part of a combination regimen (with ceftriaxone or gentamicin)",
+                description: "Duration is usually 6 weeks",
+            },
+            {
+                name: "Endocarditis, Treatment (HACEK organisms, native or prosthetic valve)",
+                dose: "IV: 2 grams every 4 hours for 4 weeks (native valve) or 6 weeks (prosthetic valve)",
+                description: "",
+            },
+            {
+                name: "Endocarditis, Treatment (Viridans group streptococci and streptococcus gallolyticus)",
+                dose: "IV: 2 grams every 4 hours for 4-6 weeks",
+                description: "Specific dosing is greatly dependent on valve type and MIC.",
+            },
+            {
+                name: "Intra-abdominal infection, health-care associated",
+                dose: "IV: 2 grams every 4 hours as part of an appropriate combination regimen",
+                description: "",
+            },
+            {
+                name: "Meningitis, bacterial",
+                dose: "IV: 2 grams every 4 hours as part of an appropriate combination regimen",
+                description: "Usual duration is 7-21 days",
+            },
+            {
+                name: "Osteomyelitis/Discitis, treatment",
+                dose: "IV: 2 grams every 4 hours or 12 grams as a continuous infusion every 24 hours",
+                description: "Usual duration is > 6 weeks ",
+            },
+            {
+                name: "Pelvic infections, Chorioamnionitis",
+                dose: "IV: 2 grams every 6 hours in combination with gentamicin",
+                description: "In patients undergoing C-section, add anaerobic coverage",
+            },
+            {
+                name: "Pelvic infections, Postpartum endometritis",
+                dose: "IV: 2 grams every 6 hours in combination with clindamycin and gentamicin",
+                description: "Treat until afebrile for 24-48 hours",
+            },
+            {
+                name: "Pelvic infections, Tubo-ovarian abscess",
+                dose: "IV: 2 grams every 6 hours in combination with clindamycin and gentamicin",
+                description: "After 24-48 hours of improvement, may switch to oral therapy for 14 days of treatment.",
+            },
+            {
+                name: "Peritonitis, treatment, peritoneal dialysis",
+                dose: "Intraperitoneal: 4 grams added to the dialysate solution once daily (dwell time of >6 hours)",
+                description: "",
+            },
+            {
+                name: "Preterm prelabor rupture of membranes (patients < 34 weeks gestation)",
+                dose: "IV: 2 grams every 6 hours for 48 hours followed by oral amoxicillinin combination with azithromycin or erythromycin",
+                description: "In patients undergoing C-section, add anaerobic coverage",
+            },
+            {
+                name: "Prosthetic Joint Infection", 
+                dose: "IV: 2 grams every 4 hours or 12 grams continuous infusion every 24 hours.", 
+                description: "Duration ranges from 4 to 6 weeks",
+            },
+            {
+                name: "Streptococcus (Group B), maternal prophylaxis for prevention of neonatal disease", 
+                dose: "IV: 2 grams as a single dose at onset of labor or prelabor rupture of membranes, then 1 gram every 4 hours until delivery", 
+                description: "",
+            },
+            {
+                name: "Urinary tract infection (Cystitis - acute uncomplicated or acute simple cystitis)", 
+                dose: "Oral: 500 mg every 6 hours for 7 days", 
+                description: "",
+            },
+            {
+                name: "Urinary tract infection (Pyelonephritis - due to Enterococcus)", 
+                dose: "IV: 1-2 grams every 4-6 hours", 
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "50 to < 130": "500 mg to 2 grams every 4-6 hours depending on usual recommended dose",
+            "30 < 50": "500 mg to 2 grams every 6-8 hours depending on usual recommended dose",
+            "15 < 30": "500 mg to 2 grams every 8-12 hours depending on usual recommended dose",
+            "< 15": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose",
+            "HD": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose", 
+            "Peritoneal dialysis": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose",
+            "CRRT": "2 grams every 8 hours",
+            "PIRRT": "2 grams every 8 hours",
+        }
+    },
 
 
     "Meropenem": {
@@ -3241,14 +3516,20 @@ const antibioticDosingData = {
         ],
         renalAdjustments: {
             "≥ 50": "No adjustment needed",
-            "> 25-49": "1g IV every 12 hours",
-            "10-24": "500 mg IV every 12 hours",
-            "< 10":" 500 mg IV every 24 hours",
-            "HD": "500 mg every 24 hours", 
-            "Peritoneal dialysis": "500 mg every 24 hours",
-            "CRRT": "Clearance dependent on effluent flow rate"
+            "> 25-49": "1 - 2 grams IV every 12 hours",
+            "10-24": "500 - 1000 mg IV every 12 hours",
+            "< 10":" 500 - 1000 mg IV every 24 hours",
+            "HD": "500 - 1000 mg IV every 24 hours", 
+            "Peritoneal dialysis": "500 - 1000 mg IV every 24 hours",
+            "CVVH/CVVHD/CVVHDF: Traditional intermittent infusion": "1 g load followed by 500 - 1000 mg every 8 hours",
+            "CVVH/CVVHD/CVVHDF: Continuous infusion method": "1 g load followed by 1 g infused over 12 hours every 12 hours",
+            "PIRRT: Traditional intermittent infusion": "1 g every 12 hours. (If urine output is > 300 mL/day may use 2 g every 8 hours)",
         }
     },
+
+
+
+    
     // Add other antibiotics with detailed data here...
 };
 
@@ -3524,3 +3805,4 @@ function showAllAntibiotics() {
 if (window.location.pathname.includes('bacteria.html')) {
     window.onload = setBacteriaName;
 }
+
