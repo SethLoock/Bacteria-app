@@ -3416,8 +3416,256 @@ const antibioticDosingData = {
             "< 15": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose",
             "HD": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose", 
             "Peritoneal dialysis": "500 mg to 2 grams every 12-24 hours depending on usual recommended dose",
-            "CRRT": "2 grams every 8 hours",
-            "PIRRT": "2 grams every 8 hours",
+            "CRRT": "2 grams every 6 to 12 hours",
+            "PIRRT": "2 grams every 8 to 12 hours",
+        }
+    },
+
+    "Amoxicillin": {
+        indications: [
+            {
+                name: "Acinomycosis",
+                dose: "Oral: 500 mg 3 to 4 times daily or 1 gram three times daily",
+                description: "Duration of therapy can be up to 12 months depending on severity of infection.",
+            },
+            {
+                name: "Anthrax (inhalational - post exposure prophylaxis)",
+                dose: "Oral: 1 gram every 8 hours. ",
+                description: "Duration depends on vaccine status and may be up to 3-4 months for immunocompromised or unvaccinated patients ",
+            },
+            {
+                name: "Anthrax (Cutaneous, without meningitis)",
+                dose: "Oral: 1 gram every 8 hours. ",
+                description: "Duration is 7-10 days after infection.",
+            },
+            {
+                name: "Anthrax (Systemic, including meningitis)",
+                dose: "IV: 2 grams every 4 hours.",
+                description: "Use in combination with other appropriate agents for > 2 weeks",
+            },
+            {
+                name: "Bronchiectasis (Treatment of pulmonary exacerbations) without B-lactamase positive H.Flu or Pseudomonas Aeruginosa.",
+                dose: "Oral: 500 mg three times daily or 1 gram 3 times daily",
+                description: "Duration for up to 14 days.",
+            },
+            {
+                name: "Bronchiectasis (Prevention of pulmonary exacerbations)",
+                dose: "Oral: 500 mg twice daily",
+                description: "Reserve for patients with >3 exacerbations per year who are not colonized with Pseudomonas Aeruginosa.",
+            },
+
+            {
+                name: "Cervical infection in pregnancy due to Chlamydia trachomatis",
+                dose: "Oral: 500 mg three times daily",
+                description: "Duration of 7 days with test of cure >4 weeks after treatment. Reserve for patients who are pregnant who cannot use preferred agents.",
+            },
+
+            {
+                name: "Endocarditis, Prophylaxis - dental tract procedure",
+                dose: "Oral: 2 grams as a single dose 30-60 minutes before procedure.",
+                description: "",
+            },
+            {
+                name: "Heliobacter pylori eradication",
+                dose: "Oral: 1 gram two to three times daily in combination with specified alternative agents.",
+                description: "Duration for up to 14 days.",
+            },
+
+            {
+                name: "Lyme disease (Erythema migrans)",
+                dose: "Oral: 500 mg three times daily",
+                description: "Duration of 14 days.",
+            },
+            {
+                name: "Lyme disease (Carditis) - for mild disease 1st degree AV block with PR interval < 300 msec or step down for severe disease once PR interval < 300 msec",
+                dose: "Oral: 500 mg three times daily",
+                description: "Duration of 14 to 21 days.",
+            },
+            {
+                name: "Lyme disease (Arthritis without neurological involvement)",
+                dose: "Oral: 500 mg three times daily",
+                description: "Duration of 28 days.",
+            },
+            {
+                name: "Otitis media (Acute)",
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours",
+                description: "Duration of 5 to 10 days depending on severity.",
+            },
+            {
+                name: "Periodontitis (Severe - plaque associated)",
+                dose: "Oral: 500 mg every 8 hours in combination with metronidazole",
+                description: "Duration of 14 days or clinical resolution - whichever is longer.",
+            },
+            {
+                name: "Peritonitis, treatment, peritoneal dialysis",
+                dose: "Oral: 500 mg three times daily for 3 weeks ",
+                description: "If no improvement treat with systemic antibiotics",
+            },
+            {
+                name: "Pneumococcal prophylaxis in high risk patients.",
+                dose: "Oral: 500 mg twice daily",
+                description: "Duration varies based on patient-specific factors ",
+            },
+            {
+                name: "Community acquired pneumonia",
+                dose: "Oral: 1 gram three times daily",
+                description: "Duration of at least 5 days. ",
+            },
+            {
+                name: "Preterm prelabor rupture of membranes (patients < 34 weeks gestation)",
+                dose: "Oral: 250 mg every 8 hours",
+                description: "Administered for 5 days following initial treatment with IV ampicillin as part of a combination regimen with azithromycin or erythromycin",
+            },
+            {
+                name: "Prosthetic Joint Infection - chronic suppression", 
+                dose: "Oral: 500 mg three times daily", 
+                description: "Duration depends on patient specific factors. Should follow IV therapy in patients undergoing 1-stage exchange or debrediment with retention prosthesis",
+            },
+            {
+                name: "Rhinosinusitis - Acute Bacterial", 
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours", 
+                description: "Duration of 5 to 7 days. Reserve antibiotic treatment for patients with risk factors for severe infection.",
+            },
+            {
+                name: "Skin and Soft Tissue Infection - Cellulitis, long term suppression of recurrent infection", 
+                dose: "Oral: 500 mg twice daily after completion of treatment.", 
+                description: "",
+            },
+            {
+                name: "Skin and Soft Tissue Infection - Erysipelas, treatment of mild infection or step-down therapy", 
+                dose: "Oral: 500 mg three times daily or 875 mg twice daily", 
+                description: "Duration of 5 days",
+            },
+            {
+                name: "Skin and Soft Tissue Infection - Erysipeloid (localized cutaneous Erysipelothrix rhusiopathiae infection)", 
+                dose: "Oral: 500 mg three times daily", 
+                description: "Duration for 5 to 10 days",
+            },
+            {
+                name: "Streptococcal pharyngitis (group A)", 
+                dose: "Oral: 500 mg twice daily or 1 gram once daily", 
+                description: "Duration of 10 days",
+            },
+
+            {
+                name: "Urinary tract infection (Cystitis - acute uncomplicated or acute simple cystitis)", 
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours", 
+                description: "Duration of 5 days",
+            },
+            {
+                name: "Urinary tract infection (Asymptomatic bacteriuria)", 
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours ", 
+                description: "Duration 5 to 7 days. ",
+            },
+        ],
+        renalAdjustments: {
+            "> 30": "No dosage adjustment necessary",
+            "10 to 30": "250 mg to 1 gram every 12 hours depending on usual recommended dose",
+            "< 10": "250 mg to 500 mg every 12 to 24 hours depending on usual recommended dose",
+            "HD": "250 mg to 500 mg every 12 to 24 hours depending on usual recommended dose", 
+            "Peritoneal dialysis": "250 mg to 500 mg every 12 to 24 hours depending on usual recommended dose",
+            "CRRT": "N/A",
+            "PIRRT": "N/A",
+        }
+    },
+
+    "Amoxicillin-Clavulanate": {
+        indications: [
+            {
+                name: "Bite wound infection (Prophylaxis or Treatment)",
+                dose: "Oral: 875 mg every 12 hours",
+                description: "For prophylaxis treatment, duration is 3 to 5 days. For active infection, duration is 5 to 14 days.",
+            },
+            {
+                name: "Bronchiectasis - Acute Exacerbation",
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours",
+                description: "Duration for up to 14 days.",
+            },
+            {
+                name: "Chronic Obstructive Pulmonary Disease - Acute Exacerbation",
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours",
+                description: "Duration of 5 to 7 days.",
+            },
+            {
+                name: "Diabetic Foot Infection (mild to moderate)",
+                dose: "Oral: 875 mg every 12 hours.",
+                description: "Duration for up to 4 weeks depending on severity of infection and should be used as part of an appropriate combination regimen",
+            },
+            {
+                name: "Intra-abdominal Infection (mild to moderate - community acquired)",
+                dose: "Oral: 875 mg every 8 to 12 hours",
+                description: "Duration depends on site of infection.",
+            },
+            {
+                name: "Neutropenic fever (low risk patinets with cancer)",
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours",
+                description: "Should be used in comination with ciprofloxacin",
+            },
+            {
+                name: "Odontogenic infection - Acute simple gingivitis (plaque associated)",
+                dose: "Oral: 875 mg every 12 hours or 500 mg every 8 hours",
+                description: "Duration for 5 to 7 days.",
+            },
+            {
+                name: "Periodontitis - Periodontitis (severe plaque associated)",
+                dose: "Oral: 875 mg every 12 hours or 500 mg every 8 hours",
+                description: "Duration for 14 days.",
+            },
+            {
+                name: "Pyogenic Odontogenic Soft Tissue Infection",
+                dose: "Oral: 875 mg every 12 hours",
+                description: "Duration for 7 to 14 days.",
+            },
+            {
+                name: "Otitis media (Acute)",
+                dose: "<br> Immediate release: 875 mg twice daily or 500 mg every 8 hours <br> Extended release: 2 grams twice daily",
+                description: "Duration of 5 to 7 days depending on severity.",
+            },
+            {
+                name: "Pneumonia (Aspiration pneumonia - community acquired)",
+                dose: "Oral: 875 mg twice daily",
+                description: "Duration of 5 days",
+            },
+            {
+                name: "Pneumonia (community acquired)",
+                dose: "<br> Immediate Release: 500 mg three times daily or 875 mg twice daily as part of an appropriate combination regimen <br> Extended Release: 2 grams twice daily as part of an appropriate combination regimen",
+                description: "Duration of 5 days minimum",
+            },
+            {
+                name: "Rhinosinusitis - Acute Bacterial", 
+                dose: "<br>Standard dose - Immediate release: 500 mg every 8 hours or 875 mg every 12 hours <br> High Dose - Extended Release: 2 grams every 12 hours", 
+                description: "Duration of 5 to 7 days. Reserve antibiotic treatment for patients with risk factors for severe infection.",
+            },
+            {
+                name: "Streptococcus, chronic carriage", 
+                dose: "Oral: 40 mg/kg/day in divided doses", 
+                description: "",
+            },
+
+            {
+                name: "Urinary tract infection (Cystitis - acute uncomplicated or acute simple cystitis)", 
+                dose: "Oral: 500 mg twice daily", 
+                description: "Duration of 5 to 7 days",
+            },
+            {
+                name: "Urinary tract infection (Complicated - pyelonephritis)", 
+                dose: "Oral: 875 mg two or three times daily", 
+                description: "Duration of 5 to 7 days",
+            },
+            {
+                name: "Urinary tract infection (Asymptomatic bacteriuria)", 
+                dose: "Oral: 500 mg every 8 hours or 875 mg every 12 hours ", 
+                description: "Duration 5 to 7 days. ",
+            },
+        ],
+        renalAdjustments: {
+            "> 30": "No dosage adjustment necessary",
+            "10 to 30": "250 mg to 500 mg every 12 hours",
+            "< 10": "250 mg to 500 mg every 12 to 24 hours",
+            "HD": "250 mg to 500 mg every 12 to 24 hours", 
+            "Peritoneal dialysis": "250 mg to 500 mg every 12 hours",
+            "CRRT": "N/A",
+            "PIRRT": "N/A",
         }
     },
 
@@ -3805,4 +4053,6 @@ function showAllAntibiotics() {
 if (window.location.pathname.includes('bacteria.html')) {
     window.onload = setBacteriaName;
 }
+
+
 
