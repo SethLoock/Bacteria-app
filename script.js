@@ -3860,158 +3860,213 @@ const antibioticDosingData = {
         indications: [
             {
                 name: "Bite wound infection",
-                dose: "IV: 1.5 to 3 grams every 6 hours",
-                description: "Continue treatment for 1 to 2 days after resolution of infection. ",
-            },
-            {
-                name: "Bloodstream infection",
-                dose: "IV: 3 grams every 6 hours",
-                description: "Duration for 7 to 14 days",
-            },
-            {
-                name: "Diabetic foot infection, moderate to severe",
-                dose: "IV: 3 grams every 6 hours.",
-                description: "Duration for 2 to 4 weeks. ",
-            },
-            {
-                name: "Endocarditis, treatment",
-                dose: "IV: 3 grams every 6 hours in combination with gentamicin. ",
-                description: "Duration for 6 weeks.",
-            },
-            {
-                name: "Odontogenic soft tissue infection, pyogenic",
-                dose: "IV: 3 grams every 6 hours. Transition to oral step-down therapy once clinical improvement is seen.",
-                description: "Duration usually 7 to 14 days",
-            },
-            {
-                name: "Pelvic infections - Pelvic inflammatory disease (including tubo-ovarian abscess",
-                dose: "IV: 3 grams every 6 hours in combination with doxycycline.",
-                description: "",
-            },
-            {
-                name: "Pelvic infections - Postpartum endometritis",
-                dose: "IV: 3 grams every 6 hours.",
-                description: "",
-            },
-            {
-                name: "Peritonitis, treatment (peritoneal dialysis)",
-                dose: "Intraperitoneal: <br> Loading dose: 1.5 grams per liter of dialysate. <br> Maintenance dose: 200 mg per liter of dialysate with each subsequent dialysis exchange.",
-                description: "Duration of therapy is 2 to 3 weeks depending on organism.",
-            },
-            {
-                name: "Pneumonia (Aspiration pneumonia - community acquired)",
-                dose: "IV: 1.5 to 3 grams every 6 hours.",
-                description: "Duration of 5 days",
-            },
-            {
-                name: "Pneumonia (community acquired)",
-                dose: "IV: 3 grams every 6 hours in combination with other agents when appropriate.",
-                description: "Duration of 5 days.",
-            },
-            {
-                name: "Pneumonia (Hospital acquired or Ventilator associated)",
-                dose: "IV: 3 grams every 6 hours in combination with other agents when appropriate.",
-                description: "Duration of 7 days.",
-            },
-            {
-                name: "Surgical prophylaxis",
-                dose: "IV: 3 grams within 60 minutes prior to surgical incision",
-                description: "",
-            },
-            {
-                name: "Surgical site infection",
-                dose: "IV: 3 grams every 6 hours",
-                description: "Duration depends on severity of infection",
-            },
-        ],
-        renalAdjustments: {
-            "> 30": "No dosage adjustment necessary",
-            "15 to 30": "1.5 to 3 grams every 12 hours depending on usual recommended dose",
-            "< 15": "1.5 to 3 grams every 24 hours depending on usual recommended dose",
-            "HD": "1.5 to 3 grams every 12 to 24 hours", 
-            "Peritoneal dialysis": "1.5 grams every 12 hours or 3 grams every 24 hours",
-            "CRRT": "3 grams every 8 to 12 hours",
-            "PIRRT": "3 grams followed by 1.5 to 3 grams every 8 to 12 hours.",
-        }
-    },
-
-    "Erta": {
-        indications: [
-            {
-                name: "Bite wound infection",
-                dose: "IV: 3.375 grams every 6 to 8 hours.",
+                dose: "IV: 1 gram once daily",
                 description: "Duration is usually 5 to 14 days.",
             },
             {
-                name: "Bloodstream infection - Community Acquired Infection",
-                dose: "IV: 3.375 grams every 6 hours",
-                description: "",
-            },
-            {
-                name: "Bloodstream infection - Health care-associated infection",
-                dose: "IV: 4.5 grams every 6 hours",
-                description: "",
-            },
-            {
-                name: "Cystic fibrosis, severe acute pulmonary exacerbation or failure of oral therapy",
-                dose: "IV: 4.5 grams every 6 hours",
-                description: "",
+                name: "Bloodstream infection",
+                dose: "IV: 1 gram once daily",
+                description: " Duration is for 7 to 14 days depending on source of infection.",
             },
             {
                 name: "Diabetic foot infection, moderate to severe",
-                dose: "IV: 3.375 grams every 6 hours or 4.5 grams every 8 hours.",
-                description: "Duration for 2 to 4 weeks. ",
+                dose: "IV: 1 gram once daily",
+                description: "Duration for 2 to 4 weeks.",
             },
             {
                 name: "Intra-abdominal infection - Acute Cholecystitis",
-                dose: "IV: 3.375 grams or 4.5 grams every 6 hours",
+                dose: "IV: 1 gram once daily",
                 description: "Continue for 1 day after gallbladder removal or clinical resolution in nonoperative patients.",
             },
             {
                 name: "Intra-abdominal infection - Cholangitis, perforated appendix, diverticulitis, abscess",
-                dose: "IV: 3.375 grams or 4.5 grams every 6 hours",
+                dose: "IV: 1 gram once daily",
+                description: "Duration depends on source of infection",
+            },
+            {
+                name: "Osteomyelitis and/or discitis",
+                dose: "IV: 1 gram once daily",
+                description: "Duration usually > 6 weeks",
+            },
+            {
+                name: "Pelvic infection, acute",
+                dose: "IV: 1 gram once daily",
                 description: "",
             },
             {
-                name: "Neutropenic fever, high risk patients with cancer",
-                dose: "IV: 4.5 grams every 6 to 8 hours until afebrile for > 48 hours",
-                description: "Continue for 1 day after gallbladder removal or clinical resolution in nonoperative patients.",
-            },
-            {
                 name: "Pneumonia (Community acquired)",
-                dose: "IV: 4.5 grams every 6 hours as part of an appropriate combination regimen",
+                dose: "IV: 1 gram once daily as part of an appropriate combination regimen",
                 description: "",
             },
             {
                 name: "Pneumonia (Hospital acquired or Ventilator associated)",
-                dose: "IV: 4.5 grams every 6 hours.",
-                description: ".",
-            },
-            {
-                name: "Sepsis and septic shock",
-                dose: "IV: 4.5 grams every 6 hours.",
+                dose: "IV: 1 gram once daily.",
                 description: "",
             },
             {
+                name: "Prosthetic join infection",
+                dose: "IV: 1 gram once daily",
+                description: "Duration usually 4 to 6 weeks",
+            },
+            {
                 name: "Skin and soft tissue infection, moderate to severe",
-                dose: "IV: 3.375 grams every 6 hours or 4.5 grams every 8 hours.",
+                dose: "IV: 1 gram once daily. ",
+                description: "Often used as part of an appropriate combination regimen",
+            },
+            {
+                name: "Surgical prophylaxis",
+                dose: "IV: 1 gram within 60 minutes prior to surgical incision",
                 description: "",
             },
             {
                 name: "Urinary tract infection, complicated (pyelonephritis)",
-                dose: "IV: 3.375 grams every 6 hours or 4.5 grams every 8 hours",
+                dose: "IV: 1 gram once daily",
                 description: "",
             },
         ],
         renalAdjustments: {
-            "100 to < 130": "Extended infusion preferred if recommended dose is 3.375 grams or 4.5 grams every 6 hours. If usual recommended dose is 3.375 grams as extended infusion then 3.375 grams or 4.5 grams infused over 4 hours every 6 hours",
-            "40 to < 100": "3.375 or 4.5 grams every 6 hours or extended infusion depending on usual recommended dose.",
-            "20 to < 40": "Variable depending on usual recommended dose",
-            "< 20": "Variable depending on usual recommended dose", 
-            "HD": "4.5 grams every 12 hours or 2.25 grams every 8 hours",
-            "Peritoneal dialysis": "4.5 grams every 12 hours of 2.25 grams every 8 hours",
-            "CRRT": "4.5 grams every 8 hours",
-            "PIRRT": "3.375 or 4.5 grams every 8 hours ",
+            "> 30": "No dose adjustment necessary",
+            "< 30": "500 mg once daily",
+            "HD": "500 mg once daily",
+            "Peritoneal dialysis": "500 mg once daily ",
+            "CRRT": "1 gram once daily",
+            "PIRRT": "500 mg initially, then 500 mg after each PIRRT session or 1 gram once daily",
+        }
+    },
+
+    "Imipenem-Cilastatin": {
+        indications: [
+            {
+                name: "Anthrax, systemic (including meningitis)",
+                dose: "IV: 1 gram every 6 hours in combination with other appropriate agents.",
+                description: "Duration is usually 2 weeks",
+            },
+            {
+                name: "Bloodstream infection",
+                dose: "IV: 500 mg every 6 hours",
+                description: " Duration is for 7 to 14 days depending on source of infection.",
+            },
+            {
+                name: "Cystic Fibrosis, acute pulmonary exacerbation",
+                dose: "IV: 500 mg to 1 gram every 6 hours",
+                description: "Give as part of an appropriate combination regimen for 10 to 14 days",
+            },
+            {
+                name: "Diabetic foot infection, moderate to severe",
+                dose: "IV: 500 mg every 6 hours",
+                description: "Duration for 2 to 4 weeks.",
+            },
+            {
+                name: "Endocarditis, treatment",
+                dose: "IV: 500 mg every 6 hours or 1 gram every 8 hours as part of an appropriate combination regimen",
+                description: "Duration is usually 6 weeks",
+            },
+            {
+                name: "Intra-abdominal infection - Acute Cholecystitis",
+                dose: "IV: 500 mg every 6 hours or 1 gram every 8 hours",
+                description: "Continue for 1 day after gallbladder removal or clinical resolution in nonoperative patients.",
+            },
+            {
+                name: "Intra-abdominal infection - Cholangitis, perforated appendix, diverticulitis, abscess",
+                dose: "IV: 500 mg every 6 hours or 1 gram every 8 hours",
+                description: "Duration depends on source of infection",
+            },
+            {
+                name: "Melioidosis (Burkholderia pseudomallei infection) or glanders (B. mallei infection)",
+                dose: "IV: 25 mg/kg up to 1 gram every 6 to 8 hours.",
+                description: "",
+            },
+            {
+                name: "Mycobacterial (nontuberculous, rapidly growing) infection",
+                dose: "IV: 500 mg to 1 gram twice daily given as part of a combination regimen",
+                description: "Duration depends on source of infection",
+            },
+            {
+                name: "Neutropenic fever, high risk cancer patients",
+                dose: "IV: 500 mg every 6 hours until afebrile for > 48 hours",
+                description: "Duration depends on source of infection",
+            },
+            {
+                name: "Nocardiosis, severe",
+                dose: "IV: 500 mg every 6 hours as part of a combination regimen. ",
+                description: "Consult ID for specific treatment recommendations. Duration range is 6 months to > 1 year",
+            },
+            {
+                name: "Peritonitis, treatment (peritoneal dialysis)",
+                dose: "<br> Intermittent intraperitoneal: 500 mg added to dialysate with every other exchange with dwell time of 6 hours. <br> Continuous intraperitoneal: Loading dose of 250 mg per liter with first exchange. Maintenance dose 50 mg per liter with each subsequent dialysate exchange.",
+                description: "",
+            },
+            {
+                name: "Pneumonia (Community acquired)",
+                dose: "IV: 500 mg every 6 hours as part of an appropriate combination regimen",
+                description: "",
+            },
+            {
+                name: "Pneumonia (Hospital acquired or Ventilator associated)",
+                dose: "IV: 500 mg every 6 hours",
+                description: "",
+            },
+            {
+                name: "Sepsis and Septic Shock",
+                dose: "IV: 500 mg every 6 hours or 1 gram every 8 hours in combination with other appropriate agents when applicable",
+                description: "",
+            },
+            {
+                name: "Skin and soft tissue infection, moderate to severe (Necrotizing infection)",
+                dose: "IV: 1 gram every 6 to 8 hours",
+                description: "",
+            },
+            {
+                name: "Skin and soft tissue infection, moderate to severe (Non-Necrotizing infection)",
+                dose: "IV: 500 mg every 6 hours",
+                description: "",
+            },
+            {
+                name: "Urinary tract infection, complicated (pyelonephritis)",
+                dose: "IV: 500 mg every 6 hours or 1 gram every 8 hours",
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "> 60 to < 130": "No dose adjustment necessary",
+            "> 30 to < 60": "500 mg every 6 to 8 hours depending on usual recommended dose",
+            "> 15 to < 30": "250 mg every 6 to 8 hours or 500 mg every 12 hours depending on usual recommended dose",
+            "< 15 ": "Do not administer unless HD is instituted within 48 hours",
+            "HD": "250 to 500 mg every 12 hours",
+            "Peritoneal dialysis": "250 to 500 mg every 12 hours",
+            "CRRT": "1 gram as a single dose followed by 250 mg every 6 hours or 500 mg every 6 to 8 hours",
+            "PIRRT": "500 mg to 1 gram as a single dose followed by 250 mg every 6 hours or 500 mg every 8 hours",
+        }
+    },
+
+    "Imipenem-Cilastatin-Relebactam": {
+        indications: [
+            {
+                name: "Intra-abdominal infection, complicated",
+                dose: "IV: 1.25 grams every 6 hours",
+                description: "Duration is usually 4 to 5 days following adequate source control",
+            },
+            {
+                name: "Pneumonia (Hospital acquired or Ventilator associated)",
+                dose: "IV: 1.25 grams every 6 hours",
+                description: "",
+            },
+            {
+                name: "Urinary tract infection, complicated (pyelonephritis)",
+                dose: "IV: 1.25 grams every 6 hours",
+                description: "",
+            },
+        ],
+        renalAdjustments: {
+            "> 90": "No dose adjustment necessary",
+            "60 to 89": "1 gram every 6 hours (imipenem 400 mg/ cilastatin 400 mg/ relebactam 200 mg)",
+            "30 to 59": "750 mg every 6 hours (imipenem 300 mg/ cilastatin 300 mg/ relebactam 150 mg)",
+            "15 to 29 ": "500 mg every 6 hours (imipenem 200 mg/ cilastatin 200 mg/ relebactam 100 mg)",
+            "< 15 ": "Not recommended in patients not receiving dialysis",
+            "HD": "500 mg every 6 hours (imipenem 200 mg/ cilastatin 200 mg/ relebactam 100 mg)",
+            "Peritoneal dialysis": "Not recommended",
+            "CRRT": "1.25 grams every 6 hours (imipenem 500 mg/ cilastatin 500 mg/ relebactam 250 mg) as a single dose followed by 750 mg every 6 hours (imipenem 300 mg/ cilastatin 300 mg/ relebactam 150 mg)",
+            "PIRRT": "1.25 grams every 6 hours (imipenem 500 mg/ cilastatin 500 mg/ relebactam 250 mg) as a single dose followed by 750 mg every 6 to 8 hours (imipenem 300 mg/ cilastatin 300 mg/ relebactam 150 mg)",
         }
     },
 
@@ -4021,31 +4076,31 @@ const antibioticDosingData = {
         indications: [
             {
                 name:"Anthrax",
-                dose: "2g IV every 8 hours", 
+                dose: "IV: 2 grams every 8 hours", 
                 description: "Should be dosed as part of an appropriate combination regimen"
             },
 
             {
                 name: "Bloodstream Infection",
-                dose: "1g IV every 8 hours",
+                dose: "IV: 1 gram every 8 hours",
                 description: "Usual duration is 7-14 days depending on source, pathogen, and clinical response"
             },
             {
                 name: "Cystic Fibrosis",
-                dose: "2g IV every 8 hours",
+                dose: "IV: 2 grams every 8 hours",
                 description:""
             }, 
 
             {
                 name: "Diabetic Foot Infection (moderate to severe)", 
-                dose: "1g IV every 8 hours",
+                dose: "IV: 1 gram every 8 hours",
                 description:""
 
             }, 
 
             {
                 name: "Intra-abdominal infections", 
-                dose: "1g IV every 8 hours", 
+                dose: "IV: 1 gram every 8 hours", 
                 description:""
 
             }, 
@@ -4053,7 +4108,7 @@ const antibioticDosingData = {
 
             {
                 name: "Melioidosis or glanders", 
-                dose: "1g IV every 8 hours", 
+                dose: "IV: 1 gram every 8 hours", 
                 description:""
 
             }, 
@@ -4061,7 +4116,7 @@ const antibioticDosingData = {
             {
                 name: "Meningitis (bacterial)", 
                 dose: "2g IV every 8 hours", 
-                description:""
+                description:"Usual duration 7 to 21 days "
 
             }, 
 
@@ -4111,14 +4166,14 @@ const antibioticDosingData = {
         ],
         renalAdjustments: {
             "≥ 50": "No adjustment needed",
-            "> 25-49": "1 - 2 grams IV every 12 hours",
-            "10-24": "500 - 1000 mg IV every 12 hours",
-            "< 10":" 500 - 1000 mg IV every 24 hours",
-            "HD": "500 - 1000 mg IV every 24 hours", 
-            "Peritoneal dialysis": "500 - 1000 mg IV every 24 hours",
+            "> 25 to < 50": "1 to 2 grams IV every 12 hours",
+            "10 to < 25 ": "500 to 1000 mg IV every 12 hours",
+            "< 10":" 500 to 1000 mg IV every 24 hours",
+            "HD": "500 to 1000 mg IV every 24 hours", 
+            "Peritoneal dialysis": "500 to 1000 mg IV every 24 hours",
             "CVVH/CVVHD/CVVHDF: Traditional intermittent infusion": "1 g load followed by 500 - 1000 mg every 8 hours",
             "CVVH/CVVHD/CVVHDF: Continuous infusion method": "1 g load followed by 1 g infused over 12 hours every 12 hours",
-            "PIRRT: Traditional intermittent infusion": "1 g every 12 hours. (If urine output is > 300 mL/day may use 2 g every 8 hours)",
+            "PIRRT: Traditional intermittent infusion": "1 g every 12 hours.",
         }
     },
 
@@ -4400,6 +4455,7 @@ function showAllAntibiotics() {
 if (window.location.pathname.includes('bacteria.html')) {
     window.onload = setBacteriaName;
 }
+
 
 
 
